@@ -5,6 +5,6 @@ WITHOUT_AUTO_PUTLHSVAR = %t;<br />
 ilib_build('build_lib',['foo','sci_foo'],files,[]);<br />
 exec loader.sce<br />
 
-You can use the function "foo" for multiplication of two matrices.(After completing the above steps)
-Example-
-ans=foo([1,2],[1;2])
+You can use the function "foo" for multiplication of two matrices.(After completing the above steps)<br />
+Example-<br />
+ans=foo([1,2],[1;2])<br />
