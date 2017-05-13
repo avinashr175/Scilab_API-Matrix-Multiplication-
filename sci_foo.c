@@ -105,9 +105,8 @@ int sci_foo(char *fname, unsigned long fname_len)
     	}
     }
 
-   // newMatrixOfBoolean = (int*)malloc(sizeof(double) * m2 * n2);
 
-    ////////// Create the output arguments //////////
+    ////////// Create the output argument //////////
 
     /* Create the matrix as return of the function */
     sciErr = createMatrixOfDouble(pvApiCtx, nbInputArgument(pvApiCtx) + 1, m1, n2, newMatrixOfDouble);
@@ -117,18 +116,11 @@ int sci_foo(char *fname, unsigned long fname_len)
         return 0;
     }
 
-    /* Create the matrix as return of the function */
-   /* sciErr = createMatrixOfBoolean(pvApiCtx, nbInputArgument(pvApiCtx) + 2, m2, n2, newMatrixOfBoolean);
-    if (sciErr.iErr)
-    {
-        printError(&sciErr, 0);
-        return 0;
-    }*/
+ 
 
-    ////////// Return the output arguments to the Scilab engine //////////
+    ////////// Return the output argument to the Scilab engine //////////
 
     AssignOutputVariable(pvApiCtx, 1) = nbInputArgument(pvApiCtx) + 1;
-   // AssignOutputVariable(pvApiCtx, 2) = nbInputArgument(pvApiCtx) + 2;
 
     ReturnArguments(pvApiCtx);
 
