@@ -58,7 +58,7 @@ int sci_foo(char *fname, unsigned long fname_len)
         return 0;
     }
 
-    ////////// Manage the second input argument (boolean) //////////
+    ////////// Manage the second input argument//////////
 
     /* get Address of inputs */
     sciErr = getVarAddressFromPosition(pvApiCtx, 2, &piAddressVarTwo);
